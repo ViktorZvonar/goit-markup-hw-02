@@ -1,6 +1,16 @@
 :root {
-  --link-text-color: #212121;
-  --link-text-size: 14px;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --tertiary-text-color: #ffffff;
+  --logo-text-color: #2196f3;
+  --accent-color: #000000;
+  --active-link-text-color: #2196f3;
+  --footer-address-text-color: #ffffff99;
+  --header-backgroung-color: #ffffff;
+  --primary-background-color: #e5e5e5;
+  --secondary-background-color: #2f303a;
+  --tertiary-background-color: #f5f4fa;
+  --button-background-color: #2196f3;
 }
 
 body {
@@ -13,12 +23,12 @@ body {
   font-size: 26px;
   line-height: 1, 19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--logo-text-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-accent {
-  color: #000000;
+  color: var(--accent-color);
 }
 
 .list {
@@ -27,15 +37,15 @@ body {
 .link-name {
   font-style: normal;
   font-weight: 500;
-  font-size: var(--link-text-size);
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--link-text-color);
+  color: var(--primary-text-color);
 }
 
 .studio:hover,
 .studio:focus {
-  color: #2196f3;
+  color: var(--active-link-text-color);
 }
 
 .contact {
@@ -44,15 +54,19 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .mail:hover,
 .mail:focus {
-  color: #2196f3;
+  color: var(--active-link-text-color);
+}
+
+.header {
+  background-color: var(--header-backgroung-color);
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .hero-title {
   font-style: normal;
@@ -62,10 +76,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--tertiary-text-color);
 }
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--button-background-color);
 }
 .order {
   font-family: 'Roboto';
@@ -77,8 +91,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--tertiary-text-color);
 }
+.main {
+  background-color: var(--primary-background-color);
+}
+
 .noname-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -87,7 +105,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .noname-text {
   font-family: 'Roboto';
@@ -96,7 +114,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .activities-title {
   font-family: 'Roboto';
@@ -106,8 +124,12 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
+.teem {
+  background-color: var(--tertiary-background-color);
+}
+
 .teem-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -116,7 +138,7 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .teem-member {
   font-family: 'Roboto';
@@ -126,7 +148,7 @@ body {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .teem-member-text {
   font-family: 'Roboto';
@@ -136,13 +158,13 @@ body {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .footer-logo-accent {
-  color: #ffffff;
+  color: var(--tertiary-text-color);
 }
 .address-text {
   font-family: 'Roboto';
@@ -151,8 +173,8 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff99;
+  color: var(--footer-address-text-color);
 }
 .physical {
-  color: #ffffff;
+  color: var(--tertiary-text-color);
 }

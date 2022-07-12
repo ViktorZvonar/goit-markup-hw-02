@@ -30,7 +30,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 }
 
 .logo-accent {
@@ -46,6 +46,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .link-name:hover,
@@ -54,8 +55,7 @@ body {
 }
 
 .link-name.current {
-  background-color: var(--active-link-color);
-  color: var(--tertiary-text-color);
+  color: var(--active-link-color);
 }
 
 .contact {
@@ -64,6 +64,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 .contact:hover,
 .contact:focus {
@@ -97,13 +98,12 @@ body {
   color: var(--tertiary-text-color);
   background-color: var(--active-link-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--active-link-hero-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .noname-title {
@@ -185,6 +185,9 @@ body {
   background: var(--primary-background-color);
   border: 1px solid #eeeeee;
 }
+.example-demo-link {
+  text-decoration: none;
+}
 
 .example-title {
   font-weight: 700;
@@ -212,6 +215,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--footer-address-text-color);
+  text-decoration: none;
 }
 
 .physical {
